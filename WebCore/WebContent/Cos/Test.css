@@ -1,0 +1,47 @@
+@CHARSET "UTF-8";
+
+h1 {
+	color: yellow;
+	font-family: 黑体;
+	font-size: xx-large;
+}
+
+p {
+	background: green;
+	color: blue;
+	font-size: small;
+   }
+
+.class {
+	color: red;
+	font-family: 楷书
+    }
+
+p.pt {
+	background: red;
+	color: pink;
+	font-size: large;
+	}	
+#id0001{
+	text-decoration:underline;
+	color:yellow;
+	font-size:x-large;
+    }
+.class{
+	text-decoration:underline;
+	color:green;
+	font-size:large;
+     }
+
+
+
+
+
+
+
+
+
+
+
+
+

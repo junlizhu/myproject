@@ -1,0 +1,29 @@
+@CHARSET "UTF-8";
+.round
+{
+	border-image:url(../../Images/1.jpg) 30 30 round; /* Safari 5 and older */
+	border-image:url(../../Images/1.jpg) 30 30 round; /* Opera */
+	border-image:url(../../Images/1.jpg) 30 30 round;
+}
+
+.stretch
+{
+    border-image:url(../../Images/2.jpg) 30 30 stretch; /* Safari 5 and older */
+	border-image:url(../../Images/2.jpg) 30 30 stretch; /* Opera */
+	border-image:url(../../Images/2.jpg) 30 30 stretch;
+}
+
+div
+{
+	border:25px solid transparent;
+	width:250px;
+	padding:30px 20px;
+}
+
+	
+	
+	
+	
+	
+	
+	

@@ -1,0 +1,111 @@
+@CHARSET "UTF-8";
+
+.font-family {
+	font-family: 楷书;
+}
+
+.font-style {
+	font-style: italic;
+}
+
+.font-style1 {
+	font-style: normal;
+}
+
+.font-variant {
+	font-variant: small-caps;
+}
+
+.font-variant1 {
+	font-variant: normal;
+}
+
+.font-weight {
+	font-weight: bolder;
+}
+
+.font-size {
+	font-size: 140px;
+}
+
+.text-transform {
+	text-transform: uppercase;
+}
+
+.text-decoration {
+	text-decoration: underline;
+}
+
+.word-spacing {
+	word-spacing: 80pt;
+}
+
+.letter-spacing {
+	letter-spacing: 20pt;
+}
+
+.line-height {
+	line-height: 40pt;
+}
+
+.text-align {
+	text-align: right;
+}
+
+.text-indent {
+	text-indent: 150;
+}
+
+.background-image {
+	background-image: url("../../Images/1.jpg" );
+	background-repeat: repeat-x;
+	margin: 2cm
+	
+
+	
+}
+
+h1 {
+	background-color: red;
+	width: 150px;
+	height: 35px;
+	font-family: 隶书;
+	font-size: xx-large;
+}
+
+h3 {
+	color: pink;
+	font-family: 隶书;
+	font-size: xx-large;
+}
+
+p {
+	color: blue;
+	font-size: large;
+	border:50pt solid red
+}
+
+p1 {
+	background: yellow;
+	width: 400px;
+	height: 35px;
+	color: blue;
+	font-size: xx-large;
+	height: 35px;
+}
+
+#id001 {
+	color: red;
+}
+.background-attachment{
+	background-attachment: scroll;
+}
+
+
+
+
+
+
+
+
+

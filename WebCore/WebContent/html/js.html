@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script language="javascript">
+	function close() {
+		document.write("Hello World");
+		//alert("欢迎访问，继续点击!");
+		//confirm("你会说英语吗？");
+		prompt("你今年多大了？", "23");
+	}
+
+	function NVGClose() {
+		window.close();
+	}
+
+	function Age() {
+		try {
+			var m = "age";
+			var n = 20;
+			document.write(parseInt(m) + n);
+			throw new Error("not a valid number");
+
+		} catch (errMsg) {
+			alert(errMsg.message);
+		}
+
+	}
+</script>
+</head>
+<body>
+<body>
+	<input name="button" type="button" value="关闭" onclick="NVGClose()">
+	<br />
+	<input name="button" type="button" value="点击" onclick="close()">
+	<input name="button" type="button" value="Age" ondblclick="Age()">
+	<br />
+	<a href="javascript.self.close()">关闭窗口</a>
+</body>
+</html>

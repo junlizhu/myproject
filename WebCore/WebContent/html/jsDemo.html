@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>菜鸟教程</title>
+<script>
+function myFunction(){
+	var x="",i=0;
+	while (i<5){
+		x=x + "该数字为 " + i + "<br>";
+		i++;
+	}
+	document.getElementById("demo").innerHTML=x;
+}
+
+
+	function displayDate() {
+		document.getElementById("demo1").innerHTML = Date();
+	}
+</script>
+</head>
+<body>
+	<h1>我的第一个 JavaScript 程序</h1>
+	<p id="demo1">这是一个段落</p>
+	<button type="button" onclick="displayDate()">显示日期</button>
+
+	<p>点击下面的按钮，只要 i 小于 5 就一直循环代码块。</p>
+	<button onclick="myFunction()">点击这里</button>
+	<p id="demo"></p>
+
+</body>
+</html>

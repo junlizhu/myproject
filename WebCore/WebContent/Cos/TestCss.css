@@ -1,0 +1,23 @@
+@CHARSET "UTF-8";
+
+h1 {
+	color: red;
+	font-family: 隶书;
+	font-size: xx-large;
+}
+
+p {
+	background: pink;
+	color: blue;
+	font-size: x-small;
+}
+
+h3 {
+	color: pink;
+	font-family: 隶书;
+	font-size: large;
+}
+
+.background-image {
+	background-image: url("../../Images/1.jpg" );
+}
