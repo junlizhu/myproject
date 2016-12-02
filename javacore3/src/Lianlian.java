@@ -5,7 +5,7 @@ public class Lianlian {
 	/**public static void main(String[] args) {
 	      double[] myList = {1.9, 2.9, 3.4, 3.5};
 
-	      // ´òÓ¡ËùÓÐÊý×éÔªËØ
+	      // ï¿½ï¿½Ó¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½
 	      for (double element: myList) {
 	         System.out.println(element);
 	      }
@@ -15,7 +15,7 @@ public class Lianlian {
 	      /**public static void main(String[] args) {
 	    	  double[] myList = {1.9, 2.9, 3.4, 3.5};
 	    	  
-	    	  // ´òÓ¡ËùÓÐÊý×éÔªËØ
+	    	  // ï¿½ï¿½Ó¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½
 	    	  for (double element: myList) {
 	    		  System.out.println(element);
 	    	  }
@@ -34,14 +34,14 @@ public class Lianlian {
 	    public static void main(String[] args) {  
 	        Scanner scan = new Scanner(System.in); 
 			
-	        // ´Ó¼üÅÌ½ÓÊÕÊý¾Ý  
+	        // ï¿½Ó¼ï¿½ï¿½Ì½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  
 
-			//next·½Ê½½ÓÊÕ×Ö·û´®
-	        System.out.println("next·½Ê½½ÓÊÕ£º");
-	        // ÅÐ¶ÏÊÇ·ñ»¹ÓÐÊäÈë
+			//nextï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+	        System.out.println("nextï¿½ï¿½Ê½ï¿½ï¿½ï¿½Õ£ï¿½");
+	        // ï¿½Ð¶ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	        if(scan.hasNext()){   
 	        	String str1 = scan.next();
-	        	System.out.println("ÊäÈëµÄÊý¾ÝÎª£º"+str1);  
+	        	System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½"+str1);  
 	        }  
 	   }
 		

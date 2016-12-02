@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../javaScript/jQuery.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+	function hideDemo() {
+		//$('p').hide();
+		$('div').hide('slow',function(){
+			alert("隐藏成功！")
+		});
+	}
+	function showDemo() {
+		//$('p').show();
+		$('div').show('slow',function(){
+			alert("显示成功！")
+		});
+	}
+	
+	
+	
+	
+	function toggleDemo(){
+		/* 		$('p').toggle('slow',function(){
+					alert("显示成功！")
+				}); */
+				$('div').toggle('slow');
+				
+			}
+	function slideUpDemo() {
+		//$('p').hide();
+		$('div').slideUp(5000,function(){
+			alert("隐藏成功！")
+		});
+	}
+	function slideDownDemo() {
+		//$('p').show();
+		$('div').slideDown(5000,function(){
+			alert("显示成功！")
+		});
+	}
+	function slideToggleDemo(){
+		 		/* $('div').toggle('slow',function(){
+					alert("显示成功！")
+				});
+		 		$('div').slideUp(5000,function(){
+					alert("隐藏成功！")
+				}); */
+				$('div').slideToggle(2000,function(){
+				var tmp=$('div').css('display');
+				if (tmp=='none') {
+					$('#001').attr('value','显示');
+				}
+				else {
+					$('#001').attr('value','隐藏');
+				}
+				});
+				
+			}
+</script>
+
+	<script>
+	$(document).ready(function() {
+			$("input").focus(function() {
+				$(this).css("background-color", "#cccccc");
+			});
+			$("input").blur(function() {
+				$(this).css("background-color", "#ffffff");
+			});
+		}); 
+		
+	</script>
+	
+	<div style="width: 24px; height: 32px; border: 1px solid red;"></div>
+	<button type="button">变大</button>
+
+	<script type="text/javascript">
+		$('button').bind('click', function() {
+			$('div').animate({
+				width : '240px',
+				height : '320px'
+			}, 3000,function(){
+				$('div').animate({
+					width : '24px',
+					height : '320px'
+				}, 3000);
+			});
+		});
+	</script>
+
+</head>
+<body>
+
+	<div
+		style="position: relative; width: 24px; height: 32px; border: 1px solid red ; display: none;"></div>
+	<hr />
+	<input type="button" value="hide" onclick="hideDemo()">
+	<input type="button" value="show" onclick="showDemo()">
+	<input type="button" value="toggle" onclick="toggleDemo()">
+	<input type="button" value="slideUp" onclick="slideUpDemo()">
+	<input type="button" value="slideDown" onclick="slideDownDemo()">
+	<input id="001" type="button" value="显示" onclick="slideToggleDemo()">
+	<br>
+	<input id="fullname" type="text" name="fullname">
+	<br>
+	<input id="email" type="text" name="email">
+
+</body>
+</html>

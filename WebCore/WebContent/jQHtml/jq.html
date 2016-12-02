@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../javaScript/jQuery.js"></script>
+
+</head>
+<body>
+<div>我是女生</div>
+	<ul>
+		<li class="fruit">Apple</li>
+		<li id="#tomato">Tomato</li>
+		<li class="fruit">Banana</li>
+		<li>Potato</li>
+		<li class="fruit">Orange</li>
+	</ul>
+	<input type="text" id="txt" ></input>
+	<button type="button" onclick="get_text();">GO</button>
+	<script>
+		//$(".fruit").css('color', 'red');
+		$(".fruit,#tomato").css('color', 'blue');
+		//console.log($('*'));
+		
+		$("div")
+		$("div").css('border','1px solid red')
+		function get_text() {
+		var domObj = document.getElementById('txt');
+		alert(document.getElementById("txt").value);
+		//alert($('#txt').val());
+		}
+		function get_text() {
+			//var jq = $('#txt');
+			var domObj = document.getElementById('txt');
+			alert($('#txt').val());
+		} 
+		
+	</script>
+	
+	
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+    document.onkeydown = function(){
+        var e = window.event || arguments[0];
+        if(e.keyCode == 13){
+            creatTab();
+        }
+    }
+    function creatTab(){
+        //创建table
+        var oTable = document.createElement('table');
+        oTable.setAttribute('border', '1');
+        oTable.setAttribute('width', '60%');
+        //创建tBody
+        var oTBody = document.createElement('tbody');
+        oTBody.setAttribute('style', 'border: 1px dashed red');
+        oTable.appendChild(oTBody);
+        //创建tr
+        for(var i = 0; i <= 8; i++){
+            oTBody.insertRow(i);
+            for(var j = 0; j <= i; j++){
+                oTBody.rows[i].insertCell(j);
+                oTBody.rows[i].cells[j].style.background = '#fc9';
+                oTBody.rows[i].cells[j].style.color = 'teal';
+                oTBody.rows[i].cells[j].appendChild(document.createTextNode((i + 1) + "*" + (j + 1) + "=" + (i + 1) * (j + 1) + "　　"));
+            }
+        }
+        document.body.appendChild(oTable);
+    }
+    </script>
+</head>
+<body>
+ <div id="div" style="position:absolute;left:100px;top:30px;width:400px;height:300px;background-color:#0F0;display:none;">弹出的层</div>
+     <input type="button" value="按钮" onclick="creatTab();" />
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../javaScript/jQuery.js"></script>
+</head>
+<body>
+	       <input id="btn" type="button" value="点我" />
+	        <input id="btn2" type="button" value="激活" />
+	<script type="text/javascript">
+		$(function() {
+			$('#btn').bind('click', function() {
+				$(this).attr("disabled", "true");
+			})
+			$('#btn2').bind('click', function() {
+				//$('#btn').attr("disabled", "false");
+				$('#btn').removeAttr("disabled");
+			})
+			
+		$(founction(){
+			$('#fullname').bind('focus',function(){
+				$(this).css("background-color", "#cccccc");
+			});
+		})	;
+		$(founction(){
+			$('#email').bind('blur',function(){
+				$(this).css("background-color", "#cccccc");
+			});
+		})	;
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+
+			$('#btn').hover(function() {
+			 $(this).val("进入");
+			 },
+			 function(){
+			 $(this).val("离开");
+			 }
+			 )
+		
+			 function overDemo() {
+				$(this).val("进入");
+			}
+			function outDemo() {
+				$(this).val("离开");
+			}
+
+			$('#btn').hover(overDemo, outDemo) 
+		});
+	</script>
+	
+</html>

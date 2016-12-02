@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>99乘法表</title>
+<script type="text/javascript">
+	document.write("<center><table border=\"1\">");
+	for (i = 1; i <= 9; i++) {
+		document.write("<tr>");
+		for (j = 1; j <= 9; j++) {
+			if (j <= i) {
+				document.write("<td>" + i + "*" + j + "=" + i * j + "</td>")
+			} else
+				document.write("<td> </td>");
+		}
+		document.write("</tr>");
+	}
+	document.write("</table></center>");
+</script>
+</head>
+<body>
+</body>
+</html>

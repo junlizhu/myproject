@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../javaScript/jQuery.js"></script>
+</head>
+<body>
+	<div>新安人才网</div>
+	<script>
+		$("div").css('border', '1px solid red');
+		//alert($("div").css('border'));
+	</script>
+
+	<div id="from">div的内容</div>
+	<div id="to"></div>
+	<script>
+		var from = $("$from").html();
+		var to = $("#to").html();
+		// $("#to").html($("$from").html());
+	</script>
+
+	<ul>
+		<li class="fruit">Apple</li>
+		<li id="tomata">Tomato</li>
+		<li class="fruit">Banana</li>
+		<li>Potato</li>
+		<li class="fruit">Orange</li>
+	</ul>
+	<script type="text/javascript">
+		//$(".fruit").css('color', 'blue');
+		$('.fruit,#tomato').css('color', 'red');
+	</script>
+
+	<div>
+		祖先元素
+		<p>
+			<label>孙元素</label> <span><label>后代元素</label></span>
+		</p>
+		<br /> <label>子元素</label> <label>子元素1</label> <label>子元素2</label> <label>子元素3</label>
+		<label>子元素4</label> <label>子元素5</label>
+	</div>
+
+	<script type="text/javascript">
+		//$("div label").css('color', 'red');//祖先后代选择器
+		//alert($('body *'));
+		//$('div > label').css('color','red');//父子选择器
+		//$('p > label').css('color','red');//父子选择器
+		//$('p + label').css('color','red');、、隔壁选择器
+		$('p~label').css('color', 'red');//邻居选择器
+	</script>
+
+	<ul>
+		<li>Apple</li>
+		<li>Tomato</li>
+		<li>Banana</li>
+		<li>Potato</li>
+		<li>Orange</li>
+		<li>Apple
+			<p>
+				<span></span>
+			</p>
+		</li>
+	</ul>
+	<script type="text/javascript">
+		//$('li:first').css('color','yellow');//第一个 
+		//$('li:last').css('color','blue');最后一个
+		//$('li:first-child').css('color','yellow');//第一个  每一个ul组合的第一个和自后一个
+		//$('li:last-child').css('color','blue');//最后一个
+		//$('li:eq(5)').css('color','pink');//指定下表过滤
+		//$('li:contains(to)').css('color','green');//按文字内容过滤
+		$('li:has(span)').css('color', 'blue');//按包含过滤
+	</script>
+	<hr />
+	<p style="display: none;">我是隐藏的</p>
+	<p style="display: none;">我是隐藏的</p>
+	<p style="display: none;">我是隐藏的</p>
+	<script>
+		//$('p:hidden').show();//过滤隐藏的元素
+		//$('p:visible').hide();//过滤显示的元素
+	</script>
+
+</body>
+</html>
