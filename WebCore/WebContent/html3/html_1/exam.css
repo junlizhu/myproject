@@ -1,0 +1,18 @@
+@CHARSET "UTF-8";
+#id0001 {
+	background: lightblue;
+	color: red ;
+	text-align: center;
+}
+#idleft{ position: absolute;
+	     top: auto;
+	     left: 200px;
+}
+#idright{ position: absolute;
+	     top: auto;
+	     right: 200px;
+}
+#idcenter{ position:absolute ;
+	     top: auto;
+	     left: 600px;
+}

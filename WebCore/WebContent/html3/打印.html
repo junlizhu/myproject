@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+.table1 {
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+	color: red;
+	margin: 0 auto;
+	background-color: lightblue;
+}
+
+.table1 td {
+	border: 1px solid #ccc;
+}
+
+div {
+	text-align: center;
+}
+
+.ten {
+	display: none;
+}
+</style>
+<script type="text/javascript" src="s.js"></script>
+</head>
+<body>
+	<div id="ta">
+		<h1>九九乘法口诀表</h1>
+		<hr />
+		<input type="button" value="打印乘法口诀" id="print" />&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="button" value="统计" id="count" />&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="button" value="样式" onclick="table.className='table1'" />&nbsp;&nbsp;&nbsp;&nbsp;
+	</div>
+	<script type="text/javascript">
+		var arr = new Array();
+		document.write("<table id='table'>");
+		for (var i = 1; i <= 10; i++) {
+			arr[i - 1] = 0;
+			if (i < 10) {
+				var sum = 0;
+				document.write("<tr>");
+				for (var j = 1; j <= 10; j++) {
+					if (j <= i) {
+						document.write("<td>" + i + "*" + j + "=" + i * j
+								+ "</td>")
+						sum += i * j;
+						arr[j - 1] += i * j;
+					} else if (j < 10) {
+						document.write("<td></td>");
+					} else {
+						document.write("<td class='ten'>" + sum + "</td>")
+					}
+				}
+				document.write("</tr>");
+			} else if (i == 10) {
+				for (var j = 0; j < 9; j++) {
+					document.write("<td class='ten'>" + arr[j] + "</td>")
+					var count = 0;
+					for (var int = 0; int < arr.length; int++) {
+						count += arr[int];
+					}
+				}
+				document.write("<td class='ten'>" + count + "</td>")
+			}
+		}
+		document.write("</table>");
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#table").hide();
+			$("#print").click(function() {
+				$('#table').show();
+			});
+		});
+		$(function() {
+			$('#count').bind('click', function() {
+				$('.ten').show();
+			})
+		})
+	</script>
+
+</body>
+</html>
